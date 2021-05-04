@@ -1,4 +1,4 @@
-Aluno: (SeuNome)
+Aluno: Guilherme Vasconcelos Rocha
 Prova de Laboratorio de Sistemas Operacionais
 Professor: Alex Salgado
 1o. Semestre de 2021   Turno: Noite            AV1
@@ -12,39 +12,42 @@ certifique que existe apenas uma pasta com esse nome) e cole nas questões todos
 no arquivo log/grepdata.txt 
 Resposta (Cole aqui o comando utilizado): 
 
+grep @ log/grepdata.txt > emails.txt
 
 2 - Renomear o arquivo av1-2021.txt da sua pasta para av1-seunome.txt 
 (dica de segurnaça: se o arquivo estiver aberto, para garantir que o arquivo não será corrompido, salve e feche-o antes de inciar o comando)
 Ex.: av1-alex.txt
 Resposta (Cole aqui o(s) comandos utilizados): 
 
-
+mv av1-2021.txt av1-GuilhermeRocha.txt
 
 3 - Crie 3 arquivos em branco que comecem com seu nome e termina com uma 
 sequencia 1, 2 e 3. 
 Ex.: alex1.txt, alex2.txt, alex3.txt. Que comandos você utilizou?
 Resposta (Cole aqui o(s) comandos utilizados): 
 
-
+touch Guilherme1.txt
+touch Guilherme2.txt
+touch Guilherme3.txt 
 
 4 - A partir de sua pasta original(item 0), usando o comando find do linux, 
 liste todos os arquivo que foram criados nos ultimos 30 minutos? 
-Resposta1 (comando linux usado): 
-Resposta2 (arquivos encontrados encontrados) :
 
+Resposta1 (comando linux usado): find . -mmin -30
 
+Resposta2 (arquivos encontrados encontrados) : 105
 
 5 - A partir da pasta principal, usando uma linha de comando linux, 
 copiar todos os arquivos para uma pasta chamada "arquivos(seunome)".
 Resposta (Cole aqui o comando utilizado): 
 
-
+cp -rf ./ ./arquivosGuilherme
 
 6 - A partir da pasta principal, mostrar as 3 primeiras linhas de todos
 os arquivos com extensão ".txt"contidos neste projeto.
 Resposta (Cole aqui o comando utilizado): 
 
-
+find . -name "*.txt" -exec head -n 3 {} +
 
 
 **************************************************************************************************
